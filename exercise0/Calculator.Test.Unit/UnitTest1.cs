@@ -15,7 +15,7 @@ namespace Calculator.Test.Unit
         [Test]
         public void AddTest()
         {
-            Assert.That(uut.Add(4, 4), Is.EqualTo(8));
+            Assert.That(uut.Add(6, 4), Is.EqualTo(10));
         }
         [Test]
         public void SubtractTest()
