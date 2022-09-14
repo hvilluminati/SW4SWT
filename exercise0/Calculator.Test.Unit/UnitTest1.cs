@@ -23,7 +23,7 @@ namespace Calculator.Test.Unit
         public void SubtractTest()
         {
             Assert.That(uut.Subtract(4, 4), Is.EqualTo(0));
-            Assert.That(uut.Subtract(-4, 4), Is.EqualTo(-4));
+            Assert.That(uut.Subtract(-4, 4), Is.EqualTo(-8));
             Assert.That(uut.Subtract(4, -4), Is.EqualTo(8));
             Assert.That(uut.Subtract(-4, -4), Is.EqualTo(0));
         }
@@ -38,9 +38,9 @@ namespace Calculator.Test.Unit
         public void PowerTest()
         {
             Assert.That(uut.Power(4, 4), Is.EqualTo(256));
-            Assert.That(uut.Power(-4, 4), Is.EqualTo(-256));
+            Assert.That(uut.Power(-4, 4), Is.EqualTo(256));
             Assert.That(uut.Power(4, -4), Is.EqualTo(0.00390625));
-            Assert.That(uut.Power(-4, -4), Is.EqualTo(-0.00390625));
+            Assert.That(uut.Power(-4, -4), Is.EqualTo(0.00390625));
         }
     }
 }
