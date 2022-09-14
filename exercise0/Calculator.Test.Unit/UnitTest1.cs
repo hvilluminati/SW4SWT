@@ -51,5 +51,15 @@ namespace Calculator.Test.Unit
             Assert.That(uut.Divide(-4, -4), Is.EqualTo(1));
             Assert.That(uut.Divide(4, 0), Is.EqualTo(double.NaN));
         }
+        [Test]
+        public void AccumulatorTest()
+        {
+            Assert.That(uut.Accumulator, Is.EqualTo(0));
+            Assert.That(uut.Accumulator, Is.EqualTo(uut.Add(2,4)));
+            Assert.That(uut.Accumulator, Is.EqualTo(uut.Subtract(2, 4)));
+            Assert.That(uut.Accumulator, Is.EqualTo(uut.Multiply(2, 4)));
+            Assert.That(uut.Accumulator, Is.EqualTo(uut.Divide(2, 4)));
+            Assert.That(uut.Accumulator, Is.EqualTo(uut.Power(2, 4)));
+        }
     }
 }
