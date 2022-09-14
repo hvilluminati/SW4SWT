@@ -50,6 +50,11 @@ namespace exercise0
                 return Accumulator;
             }
         }
+
+        public void Clear(double Accumulator)
+        {
+            Accumulator = 0.0;
+        }
         public double Accumulator { get; private set; } 
 
     }
