@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="NunitXml.TestLogger" Version="3.0.117" />
+    <PackageReference Include="Prism" Version="5.7.0-pre3" />
   </ItemGroup>
 
 </Project>
