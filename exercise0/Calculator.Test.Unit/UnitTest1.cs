@@ -42,5 +42,14 @@ namespace Calculator.Test.Unit
             Assert.That(uut.Power(4, -4), Is.EqualTo(0.00390625));
             Assert.That(uut.Power(-4, -4), Is.EqualTo(0.00390625));
         }
+        [Test]
+        public void DivideTest()
+        {
+            Assert.That(uut.Divide(4, 4), Is.EqualTo(1));
+            Assert.That(uut.Divide(-4, 4), Is.EqualTo(-1));
+            Assert.That(uut.Divide(4, -4), Is.EqualTo(-1));
+            Assert.That(uut.Divide(-4, -4), Is.EqualTo(1));
+            Assert.That(uut.Divide(4, 0), Is.EqualTo(double.NaN));
+        }
     }
 }

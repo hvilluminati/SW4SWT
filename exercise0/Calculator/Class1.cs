@@ -40,7 +40,7 @@ namespace exercise0
         public double Divide(double dividend, double divisor)
         {
             if (divisor == 0)
-                return 0;
+                return double.NaN;
             else
                 return dividend / divisor;
         }
