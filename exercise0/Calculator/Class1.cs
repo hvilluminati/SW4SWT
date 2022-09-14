@@ -28,8 +28,15 @@ namespace exercise0
 
         public double Power(double x, double exponent)
         {
-
             return Math.Pow(x, exponent);
+        }
+
+        public double Divide(double dividend, double divisor)
+        {
+            if (divisor == 0)
+                return 0;
+            else
+                return dividend / divisor;
         }
     }
 }
