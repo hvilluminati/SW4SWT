@@ -54,12 +54,12 @@ namespace Calculator.Test.Unit
         [Test]
         public void AccumulatorTest()
         {
-            Assert.That(uut.Accumulator, Is.EqualTo(0));
-            Assert.That(uut.Accumulator, Is.EqualTo(uut.Add(2,4)));
-            Assert.That(uut.Accumulator, Is.EqualTo(uut.Subtract(2, 4)));
-            Assert.That(uut.Accumulator, Is.EqualTo(uut.Multiply(2, 4)));
-            Assert.That(uut.Accumulator, Is.EqualTo(uut.Divide(2, 4)));
-            Assert.That(uut.Accumulator, Is.EqualTo(uut.Power(2, 4)));
+            Assert.That(0, Is.EqualTo(uut.Accumulator));
+            Assert.That(uut.Add(2, 4), Is.EqualTo(uut.Accumulator));
+            Assert.That(uut.Subtract(2, 4), Is.EqualTo(uut.Accumulator));
+            Assert.That(uut.Multiply(2, 4), Is.EqualTo(uut.Accumulator));
+            Assert.That(uut.Divide(2, 4), Is.EqualTo(uut.Accumulator));
+            Assert.That(uut.Power(2, 4), Is.EqualTo(uut.Accumulator));
         }
     }
 }
